@@ -14,7 +14,7 @@ $output-bourbon-deprecation-warnings: false;
 // @import "./node_modules/swiper/swiper.scss";
 
 @import "mixin";
-@import "fonts";
+// @import "fonts";
 // @import "bootstrap-theme/bootstrap";
 
 // Option B: Include parts of Bootstrap
@@ -25,10 +25,10 @@ $output-bourbon-deprecation-warnings: false;
 // Layout & components
 
 @import "./node_modules/bootstrap/scss/functions";
-@import "vars_base";   
-@import "vars";   
+@import "_vars_base";   
+@import "_vars";   
 @import "./node_modules/bootstrap/scss/mixins";
-
+@import "fonts";
 @import "root";
 @import "base";
 

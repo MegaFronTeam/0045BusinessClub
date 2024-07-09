@@ -2,7 +2,7 @@
 .header {
 	padding: rem(15) 0;
 	border-bottom: 1px solid $gray-300;
-
+	background-color: $gray-200;
 	@include media-breakpoint-up(xl) {
 	}
 	@include media-breakpoint-up(lg) {

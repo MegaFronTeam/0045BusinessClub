@@ -1,13 +1,17 @@
 mixin headerBlock()
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 SoyuzGrotesk-Bold
-				p GTEestiProDisplay
-				p.fw-bold GTEestiProDisplay
-				+icon('telegram')
-				+iconC('telegram')
-			.row
-						
+		+e.container.container
+			+img('img/header-bg-1.png').picture-bg-1
+			+img('img/header-bg-2.png').picture-bg-2
+			+img('img/header-bg-3.png').picture-bg-3
+			+img('img/header-bg-4.png').picture-bg-4
+			+img('img/header-bg-5.png').picture-bg-5
+			+b.section-title
+				h1 
+					span.text-primary Клуб <br/>
+					span.fz-150 молодых 
+					span.fz-108 предпринимателей
+				h3 Сообщество #[span.text-primary сильного] окружения
+				+e.btn.btn.btn-primary(href='#') Вступить в клуб
 	// end headerBlock

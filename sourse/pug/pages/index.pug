@@ -1,12 +1,8 @@
 extends ../layout/main.pug
 
 include ../blocks/headerBlock/_headerBlock.pug
-include ../blocks/sForm/_sForm.pug
-include ../blocks/sContent/_sContent.pug
  
-include ../blocks/sContact/_sContact.pug
-include ../blocks/sForm/_sForm.pug
-include ../blocks/sForm/_sForm.pug
+include ../blocks/sClubIs/_sClubIs.pug
 include ../blocks/sCatalog/_sCatalog.pug
 
 block variables
@@ -22,9 +18,8 @@ block pagecontent
 	
 	+parts('header')
 	main
-		+headerBlock 
+		+headerBlock
+		+sClubIs 
 		+sCatalog
-		+sForm()
-		+sContact()
 		
 	+parts('footer')

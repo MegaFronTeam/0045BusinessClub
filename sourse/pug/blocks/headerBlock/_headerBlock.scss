@@ -2,9 +2,9 @@
 .headerBlock {
 	--sPT: #{rem(30)};
 	--sPB: #{rem(30)};
-	// --sTPB: #{rem()};
+	--sTPB: #{rem(0)};
 	overflow: hidden;
-	@include media-breakpoint-up(md) {
+	@include media-breakpoint-up(lg) {
 		overflow: visible;
 	} 
 	@include media-breakpoint-up(lg) {
@@ -44,7 +44,7 @@
 			z-index: -1;
 			@include media-breakpoint-up(xxl) {
 				right: rem(90);
-				right: rem(-166);
+				// right: rem(-166);
 			}
 		}
 		.picture-bg-4 {
@@ -153,7 +153,7 @@
 			font-size: rem(40);
 			margin-bottom: rem(33);
 		}
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(lg) {
 			max-width: max-content;
     	margin-left: auto;
 		}

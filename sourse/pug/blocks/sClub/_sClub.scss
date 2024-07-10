@@ -19,15 +19,21 @@
 		position: relative;
 		.bg-2 {
 			position: absolute;
-			left: 0;
+			left: rem(-80);
 			top: rem(-112);
 			z-index: -1;
+			@include media-breakpoint-up(lg) {
+				left: 0;
+			}
 		}
 		.bg-3 {
 			position: absolute;
-			right: 0;
+			right: rem(-100);
 			top: rem(19);
 			z-index: -1;
+			@include media-breakpoint-up(lg) {
+				right: 0;
+			}
 		}
 	}
 	.section-title {

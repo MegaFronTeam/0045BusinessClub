@@ -1,0 +1,112 @@
+// start .sFormats
+.sFormats {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	--sTPB: #{rem(138)};
+	
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include media-breakpoint-up(sm) {
+      grid-template-columns:
+      repeat(auto-fill, minmax(440px, 1fr));
+    }
+    gap: rem(32);
+	}
+
+  .container {
+    position: relative;
+  }
+
+	.section-title{
+		position: relative;
+    color: $white;
+	}
+
+  .bg-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    z-index: -1;
+  }
+
+  .h3 {
+    margin: auto;
+    margin-bottom: rem(25);
+    max-width: 90%;
+  }
+
+  .net {
+    position: absolute;
+    bottom: rem(-230);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sFormats
+
+.formats-card {
+  overflow: hidden;
+  border-radius: rem(10);
+  background: $white;
+
+  &__img-wrap {
+    position: relative;
+    min-height: 130px;
+    @include media-breakpoint-up(sm) {
+      min-height: 150px;
+    }
+    display: flex;
+    align-items: center;
+    padding: rem(15) rem(25);
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    color: $white;
+    line-height: 1.2;
+  }
+
+  &__descr {
+    padding: rem(33) rem(25);
+    min-height: rem(218);
+  }
+
+  p, li {
+    line-height: 1.2;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    margin-left: rem(30);
+  }
+
+  span {
+    font-weight: 700;
+  }
+}

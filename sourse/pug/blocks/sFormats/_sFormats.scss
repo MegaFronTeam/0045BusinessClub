@@ -24,6 +24,10 @@
 	.section-title{
 		position: relative;
     color: $white;
+    
+    @include media-breakpoint-up(lg) {
+      transform: translateX(20px);
+    }
 	}
 
   .bg-line {
@@ -38,6 +42,7 @@
     margin: auto;
     margin-bottom: rem(25);
     max-width: 90%;
+    line-height: 1.15;
   }
 
   .net {

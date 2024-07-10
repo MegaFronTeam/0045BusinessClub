@@ -1,0 +1,32 @@
+mixin sPart(data)
+	// start sPart
+	+b.SECTION.sPart.section#sPart&attributes(attributes)
+		.container
+			+e.item
+				+img(src="img/svg/zig.svg", alt="").zig
+				+b.section-title
+					h2 4 шага, как стать резидентом Клуба
+				+e.row.row
+					+img(src="img/svg/line.svg", alt="").line.d-none.d-xl-block
+					+e.col.col-12.col-xl-5
+						+b.pathCard
+							+img(src="img/svg/bullet.svg", alt="").bullet
+							+e.title Зарегистрироваться на платформе #[a(href='#') Росмолодёжь.Бизнес]
+						+b.pathCard
+							+img(src="img/svg/bullet.svg", alt="").bullet
+							+e.title Заполнить заявку в Клуб молодых предпринимателей (Указать ИНН, сферу деятельности, описание проекта)
+					+e.col.col-12.col-xl-4
+						+b.pathCard--reverse
+							+img(src="img/svg/bullet.svg", alt="").bullet
+							+e.title Получить положительный ответ со стороны модератора
+						p На этом этапе с тобой свяжется региональный представитель твоего региона. Тебе расскажут о деятельности и возможностях клуба и пригласят в чат региональной ячейки
+					+e.col.col-12.col-xl-3
+						+b.pathCard
+							+img(src="img/svg/bullet.svg", alt="").bullet
+							+e.title Подписаться на информационный канал #[a(href='#') Росмолодёжь.Бизнес] и следить за анонсами планируемых мероприятий
+	// end sPart
+
+mixin itemPath(title)
+	+b.pathCard
+		+img(src="img/svg/bullet.svg", alt="")
+		+e.title= title

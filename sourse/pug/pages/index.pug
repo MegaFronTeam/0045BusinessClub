@@ -6,6 +6,12 @@ include ../blocks/sClubIs/_sClubIs.pug
 include ../blocks/sRegionalOffices/_sRegionalOffices.pug
 include ../blocks/sAllforYou/_sAllforYou.pug
 
+
+
+
+include ../blocks/sContact/_sContact.pug
+
+
 block variables
 	- let  mainPage= 'main-page' 
 	- let  bg= null
@@ -23,4 +29,10 @@ block pagecontent
 		+sClubIs 
 		+sRegionalOffices
 		+sAllforYou
+
+
+
+
+
+		+sContact
 	+parts('footer')

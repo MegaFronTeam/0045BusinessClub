@@ -1,12 +1,12 @@
 // start .sAllforYou
 .sAllforYou {
 	--sPT: #{rem(30)};
-	--sPB: #{rem(30)};
+	--sPB: #{rem(40)};
 	--sTPB: #{rem(30)};
 	@include media-breakpoint-up(lg) {
 		--sPT: #{rem(69)};
-		--sPB: #{rem(69)};
-		--sTPB: #{rem(40)};
+		--sPB: #{rem(85)};
+		--sTPB: #{rem(56)};
 	}
 	&__container {
 		position: relative;
@@ -14,13 +14,59 @@
 			position: absolute;
 			left: rem(-252);
 			top: rem(-99);
+			z-index: -1;
+		}
+		.bg-2 {
+			position: absolute;
+			right: rem(-162);
+			bottom: rem(30.400);
+			z-index: -1;	
+			@include media-breakpoint-up(xxl) {
+				right: rem(-62);
+			}
+		}
+		.bg-3 {
+			position: absolute;
+			right: rem(170);
+			bottom: rem(93);
+			display: none;
+			@include media-breakpoint-up(lg) {
+				display: block;
+			}
+			@include media-breakpoint-up(xxl) {
+				right: rem(270);
+			}
+		}
+		.bg-4 {
+			position: absolute;
+			right: rem(-155);
+			bottom: rem(202);
+			@include media-breakpoint-up(lg) {
+				right: rem(-55);
+			}
+			@include media-breakpoint-up(xxl)  {
+				right: rem(45);
+			}
+		}
+		.bg-5 {
+			position: absolute;
+			right: rem(26);
+			bottom: rem(56);
+			@include media-breakpoint-up(lg) {
+				bottom: rem(472);
+			}
+			@include media-breakpoint-up(xxl) {
+				right: rem(126);
+			}
 		}
 	}
 	&__row {
+		max-width: rem(1059.800);
+    margin: 0 auto rem(88.200) auto;
+		.row{
 		--bs-gutter-y: #{rem(18)};
 		--bs-gutter-x: #{rem(63)};
-		max-width: rem(1127);
-    margin: 0 auto;
+		}
 	}
 	.section-title{
 		max-width: rem(600);
@@ -73,6 +119,49 @@
 		img {
 			max-width: 100%;
 			height: auto;
+		}
+	}
+	&__btn {
+		--bs-btn-font-family: 'Roboto Flex';
+		--bs-btn-font-size: #{rem(20)};
+		--bs-btn-font-weight: 500;
+		--bs-btn-line-height: 0.853242321;
+		--bs-btn-padding-y: #{rem(19.700)};
+		--bs-btn-border-radius: #{rem(100)};
+
+		--bs-btn-color: #fff;
+		--bs-btn-hover-color: #fff;
+		--bs-btn-active-color: #fff;
+		--bs-btn-diabled-color: #fff;
+
+		display: block;
+		width: 100%;
+		max-width: rem(551);
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		&:hover {
+			&:after {
+				transform: translateY(-50%) rotate(90deg);
+			}
+		}
+		&:after {
+			@include mt;
+			content: '';
+			position: absolute;
+			display: block;
+			width: rem(40);
+			height: rem(40);
+			border-radius: 50%;
+			background-color: #fff;
+			top: 50%;
+			transform: translateY(-50%);
+			right: rem(9);
+
+			background-image: url("data:image/svg+xml,%3Csvg width='31' height='31' viewBox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_85_5433)'%3E%3Cpath d='M22.1245 8.87762C22.1245 8.52924 21.842 8.24682 21.4937 8.24682L15.8164 8.24682C15.4681 8.24682 15.1856 8.52924 15.1856 8.87762C15.1856 9.226 15.4681 9.50842 15.8164 9.50842L20.8629 9.50842L20.8629 14.5548C20.8629 14.9032 21.1453 15.1856 21.4937 15.1856C21.842 15.1856 22.1245 14.9032 22.1245 14.5548L22.1245 8.87762ZM9.32367 21.9397L21.9397 9.32366L21.0476 8.43157L8.43158 21.0476L9.32367 21.9397Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_85_5433'%3E%3Crect width='30.2785' height='30.2785' fill='white' transform='translate(0.0464478 0.0463867)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+			background-repeat: no-repeat;
+			background-size: rem(30);
+			background-position: center;
 		}
 	}
 	@include media-breakpoint-up(xl) {}

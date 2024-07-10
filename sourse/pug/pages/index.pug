@@ -5,6 +5,7 @@ include ../blocks/headerBlock/_headerBlock.pug
 include ../blocks/sClubIs/_sClubIs.pug
 include ../blocks/sRegionalOffices/_sRegionalOffices.pug
 include ../blocks/sAllforYou/_sAllforYou.pug
+include ../blocks/sClub/_sClub.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -23,4 +24,5 @@ block pagecontent
 		+sClubIs 
 		+sRegionalOffices
 		+sAllforYou
+		+sClub()
 	+parts('footer')

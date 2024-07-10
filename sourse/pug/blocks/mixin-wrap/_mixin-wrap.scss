@@ -116,10 +116,12 @@
 	--gutter: #{rem(8)};
 	--slide-count: 1;
 
-	margin-right: calc(var(--gutter) * -1);
 	position: relative;
+	.swiper {
+		margin-right: calc((var(--gutter) * -1) - 1px);
+	}
 	&__slide {
-		width: calc(100% / var(--slide-count) - var(--gutter));
+		width: calc(100% / var(--slide-count) - (var(--gutter) - 0.1px));
 		margin-right: var(--gutter);
 	}
 }

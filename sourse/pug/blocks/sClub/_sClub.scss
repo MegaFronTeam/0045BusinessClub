@@ -30,6 +30,11 @@
 			z-index: -1;
 		}
 	}
+	.section-title {
+		h2 {
+			color: #fff;
+		}
+	}
 	&__swiper-wrapper {
 		max-width: rem(1111);
 		margin: 0 auto 0px auto;

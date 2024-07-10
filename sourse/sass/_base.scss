@@ -307,6 +307,11 @@ ul {
 	&-prev {
 		left: var(--swiperArrowPosition);
 	}
+
+	&-disabled {
+		opacity: .6;
+		pointer-events: none;
+	}
 }
 
 .swiper-pagination {

@@ -1,10 +1,10 @@
 {
 	"nav": [
-		{"name": "Миссия", "url": "#"},
-		{"name": "Ценности", "url": "#"},
-		{"name": "Клуб в лицах", "url": "#"},
-		{"name": "Типы участия", "url": "#"},
-		{"name": "Контакты", "url": "#"}
+		{"name": "Миссия", "url": "#sClubIs"},
+		{"name": "Ценности", "url": "#sAllforYou"},
+		{"name": "Клуб в лицах", "url": "#sClub"},
+		{"name": "Типы участия", "url": "#sFormats"},
+		{"name": "Контакты", "url": "#sContact"}
 	],
 	"social": ["fb", "instagram", "telegram"],
 	"index": {

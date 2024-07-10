@@ -1,9 +1,24 @@
 mixin sStructure(data)
 	// start sStructure
 	+b.SECTION.sStructure.section#sStructure&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 sStructure
-				
-			+e.row.row
+		+e.container.container
+			+img('img/sStructure-img-4.png').bg-1
+			+b.defaultSwiper
+				+b.section-title.text-center
+					h2 Структура клуба
+					+e.arrow-wrap
+						+arrow
+				mixin slide(span, img, text, btn=true)
+					+e.slide.swiper-slide
+						span!= span
+						+e.img-wrap: +img(`img/${img}`)
+						div
+							p!= text
+							if btn
+								+e.btn.btn.btn-outline-light(href='#') Список представителей
+				.swiper
+					.swiper-wrapper
+						+slide('Окружной Представитель', 'sStructure-img-1.png', 'Резиденты, оказывающие содействие в достижении целей и задач Клуба и координирующие деятельность региональных представителей')
+						+slide('Региональный Представитель клуба', 'sStructure-img-2.png', 'Резиденты, оказывающие содействие в развитии Клуба на территории определённого субъекта Российской Федерации')
+						+slide('Резидент клуба', 'sStructure-img-3.png', 'Граждане Российской Федерации в возрасте от 14 до 35 лет, которые хотят развиваться в сообществе ', false)
 	// end sStructure

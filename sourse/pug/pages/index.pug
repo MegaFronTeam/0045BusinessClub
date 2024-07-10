@@ -3,7 +3,8 @@ extends ../layout/main.pug
 include ../blocks/headerBlock/_headerBlock.pug
  
 include ../blocks/sClubIs/_sClubIs.pug
-include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/sRegionalOffices/_sRegionalOffices.pug
+include ../blocks/sAllforYou/_sAllforYou.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -20,6 +21,6 @@ block pagecontent
 	main
 		+headerBlock
 		+sClubIs 
-		+sCatalog
-		
+		+sRegionalOffices
+		+sAllforYou
 	+parts('footer')

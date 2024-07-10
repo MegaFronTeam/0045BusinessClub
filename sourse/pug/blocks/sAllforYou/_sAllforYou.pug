@@ -1,0 +1,25 @@
+mixin sAllforYou(data)
+	// start sAllforYou
+	+b.SECTION.sAllforYou.section#sAllforYou&attributes(attributes)
+		mixin item(title, img, text)
+			+e.item
+				h3!= title
+				+e.item-wrap
+					+e.img-wrap
+						+img(`img/svg/${img}`)
+					p!= text
+		+e.container.container
+			+img('img/sAllforYou-bg-1.png').bg
+			+b.section-title.text-center
+				h2 всё для твоего роста в одном месте
+			+e.row.row
+				.col-lg
+					+item('ускорение', 'sAllforYou-svg-1.svg', 'Среда Клуба сформирована для ускорения развития как в бизнесе, так и в социальной сфере')
+					+item('ПОДДЕРЖКА', 'sAllforYou-svg-2.svg', 'Меры поддержки от организаций партнёров трека Росмолодёжь.Бизнес')
+					+item('социальный лифт', 'sAllforYou-svg-3.svg', 'Возможности для молодых предпринимателей')
+					+item('ОКРУЖЕНИЕ ', 'sAllforYou-svg-4.svg', 'Сильное окружение единомышленников')
+				.col-lg
+					+item('ИСТОРИЯ', 'sAllforYou-svg-5.svg', 'Истории успеха, которые вдохновляют на новые свершения')
+					+item('Узнаваемость', 'sAllforYou-svg-6.svg', 'Поддержка резидентов на любом уровне развития бизнеса')
+					
+	// end sAllforYou

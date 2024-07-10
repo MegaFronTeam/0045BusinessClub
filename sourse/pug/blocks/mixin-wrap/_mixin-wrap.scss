@@ -111,3 +111,15 @@
 	width: auto;
 	// margin-right: rem(32);
 }
+
+.defaultSwiper {
+	--gutter: #{rem(8)};
+	--slide-count: 1;
+
+	margin-right: calc(var(--gutter) * -1);
+	position: relative;
+	&__slide {
+		width: calc(100% / var(--slide-count) - var(--gutter));
+		margin-right: var(--gutter);
+	}
+}

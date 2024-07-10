@@ -50,18 +50,18 @@ function eventHandler() {
 		watchOverflow: true,
 	});
 
-	const swiper4 = new Swiper(".sBanners__slider--js", {
-		// slidesPerView: 5,
-		...defaultSl,
-		slidesPerView: "auto",
-		freeMode: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
-		slideToClickedSlide: true,
-		freeModeMomentum: true,
-	});
-
-	
+	let defaultSliders = document.querySelectorAll('.defaultSwiper');
+	if(defaultSliders) {
+		for (const defaultSlider of defaultSliders) {
+			const defaultSwiper = new Swiper(defaultSlider.querySelector('.swiper'), {
+				slidesPerView: 'auto',
+				navigation: {
+					nextEl: defaultSlider.querySelector('.swiper-button-next'),
+					prevEl: defaultSlider.querySelector('.swiper-button-prev'),
+				},
+			});
+		}
+	}
 }
 if (document.readyState !== "loading") {
 	eventHandler();

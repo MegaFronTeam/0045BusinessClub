@@ -10,16 +10,21 @@ mixin sAllforYou(data)
 					p!= text
 		+e.container.container
 			+img('img/sAllforYou-bg-1.png').bg
+			+img('img/sAllforYou-bg-2.png').bg-2
+			+img('img/sAllforYou-bg-3.png').bg-3
+			+img('img/sAllforYou-bg-4.png').bg-4
+			+img('img/sAllforYou-bg-5.png').bg-5
 			+b.section-title.text-center
 				h2 всё для твоего роста в одном месте
-			+e.row.row
-				.col-lg
-					+item('ускорение', 'sAllforYou-svg-1.svg', 'Среда Клуба сформирована для ускорения развития как в бизнесе, так и в социальной сфере')
-					+item('ПОДДЕРЖКА', 'sAllforYou-svg-2.svg', 'Меры поддержки от организаций партнёров трека Росмолодёжь.Бизнес')
-					+item('социальный лифт', 'sAllforYou-svg-3.svg', 'Возможности для молодых предпринимателей')
-					+item('ОКРУЖЕНИЕ ', 'sAllforYou-svg-4.svg', 'Сильное окружение единомышленников')
-				.col-lg
-					+item('ИСТОРИЯ', 'sAllforYou-svg-5.svg', 'Истории успеха, которые вдохновляют на новые свершения')
-					+item('Узнаваемость', 'sAllforYou-svg-6.svg', 'Поддержка резидентов на любом уровне развития бизнеса')
-					
+			+e.row
+				.row
+					.col-lg
+						+item('ускорение', 'sAllforYou-svg-1.svg', 'Среда Клуба сформирована для ускорения развития как в бизнесе, так и в социальной сфере')
+						+item('ПОДДЕРЖКА', 'sAllforYou-svg-2.svg', 'Меры поддержки от организаций партнёров трека Росмолодёжь.Бизнес')
+						+item('социальный лифт', 'sAllforYou-svg-3.svg', 'Возможности для молодых предпринимателей')
+						+item('ОКРУЖЕНИЕ ', 'sAllforYou-svg-4.svg', 'Сильное окружение единомышленников')
+					.col-lg
+						+item('ИСТОРИЯ', 'sAllforYou-svg-5.svg', 'Истории успеха, которые вдохновляют на новые свершения')
+						+item('Узнаваемость', 'sAllforYou-svg-6.svg', 'Поддержка резидентов на любом уровне развития бизнеса')
+			+e.btn.btn.btn-primary(href='#') Вступить в клуб
 	// end sAllforYou

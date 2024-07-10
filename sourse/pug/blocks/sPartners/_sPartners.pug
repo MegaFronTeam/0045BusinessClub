@@ -1,0 +1,18 @@
+mixin sPartners(data)
+	// start sPartners
+	+b.SECTION.sPartners.section#sPartners&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 партнеры
+			+e.inner-wrapper
+				+e.item
+					.h3.text-primary инфраструктурные
+					+e.wrapper
+						- for (var x = 1; x < 8; x++)
+							.img-wrap: +img(src=`img/pertners-1-${x}.png`, alt="")
+				+e.item
+					.h3.text-primary информационные
+					+e.wrapper
+						- for (var x = 10; x > 0; x--)
+							.img-wrap: +img(src=`img/partners-${x}.png`, alt="")
+	// end sPartners

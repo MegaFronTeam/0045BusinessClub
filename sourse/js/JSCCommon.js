@@ -407,6 +407,7 @@ export default class JSCCommon {
 			self.find(".custom-select-js").select2({
 				allowClear: false,
 				dropdownParent: self,
+				minimumResultsForSearch: Infinity
 			});
 		});
 	}

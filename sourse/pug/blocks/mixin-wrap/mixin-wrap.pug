@@ -52,3 +52,17 @@ mixin defaultSlider(arrow)
 		.swiper
 			.swiper-wrapper
 				block
+
+mixin card(name, city, company, btn=true, logo=true)
+	+b.card
+		+e.img-wrap: .img-wrap-center: +img('img/sClub-img-1.png', 'bg')
+		+e.content
+			.row
+				if logo
+					.col-auto: +img('img/svg/logo-2.svg')
+				.col: +e.name!= name
+			+e.city!= city
+			if company
+				+e.company!= company
+			if btn
+				+e.btn.btn.btn-outline-dark.link-modal-js(href='#modal-info') Подробнее

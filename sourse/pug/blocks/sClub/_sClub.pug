@@ -7,22 +7,18 @@ mixin sClub(data)
 			+img('img/sClub-bg-3.png').bg-3
 			+b.section-title.text-center
 				h2 клуб в лицах
-			mixin slide(name, city, company)
-				+e.slide.swiper-slide
-					+e.img-wrap: .img-wrap-center: +img('img/sClub-img-1.png', 'bg')
-					+e.content
-						.row
-							.col-auto: +img('img/svg/logo-2.svg')
-							.col: +e.name!= name
-						+e.city!= city
-						+e.company!= company
-						+e.btn.btn.btn-outline-dark(href='#') Подробнее
 			+e.swiper-wrapper
 				+defaultSlider(true)
-					+slide('Вадим Кульков', 'Краснодарский край', 'Компания «БРОНИРУЙ»')
-					+slide('Валерия Котова', 'Вологодская область', 'Салон мебели VALERIE')
-					+slide('Дмитрий Моисеенко', 'Красноярский край', 'Промтехэкология')
-					+slide('Вадим Кульков', 'Краснодарский край', 'Компания «БРОНИРУЙ»')
-					+slide('Валерия Котова', 'Вологодская область', 'Салон мебели VALERIE')
-					+slide('Дмитрий Моисеенко', 'Красноярский край', 'Промтехэкология')
+					+e.slide.swiper-slide
+						+card('Вадим Кульков', 'Краснодарский край', 'Компания «БРОНИРУЙ»')
+					+e.slide.swiper-slide
+						+card('Валерия Котова', 'Вологодская область', 'Салон мебели VALERIE')
+					+e.slide.swiper-slide
+						+card('Дмитрий Моисеенко', 'Красноярский край', 'Промтехэкология')
+					+e.slide.swiper-slide
+						+card('Вадим Кульков', 'Краснодарский край', 'Компания «БРОНИРУЙ»')
+					+e.slide.swiper-slide
+						+card('Валерия Котова', 'Вологодская область', 'Салон мебели VALERIE')
+					+e.slide.swiper-slide
+						+card('Дмитрий Моисеенко', 'Красноярский край', 'Промтехэкология')
 	// end sClub

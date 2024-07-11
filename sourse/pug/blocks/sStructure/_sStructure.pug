@@ -15,7 +15,7 @@ mixin sStructure(data)
 						div
 							p!= text
 							if btn
-								+e.btn.btn.btn-outline-light(href='#') Список представителей
+								+e.btn.btn.btn-outline-light.link-modal-js(href='#modal-find') Список представителей
 				.swiper
 					.swiper-wrapper
 						+slide('Окружной Представитель', 'sStructure-img-1.png', 'Резиденты, оказывающие содействие в достижении целей и задач Клуба и координирующие деятельность региональных представителей')

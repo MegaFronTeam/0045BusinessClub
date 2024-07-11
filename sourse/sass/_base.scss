@@ -292,7 +292,9 @@ ul {
 	}
 
 	.icon {
-		font-size: rem(15);
+		width: 1em;
+		height: 1em;
+		font-size: rem(23);
 		stroke-width: 2px;
 		stroke: currentColor;
 	}

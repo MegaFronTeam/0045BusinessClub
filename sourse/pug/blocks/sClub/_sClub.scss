@@ -60,6 +60,14 @@
 			top: rem(-80);
 		}
 	}
+	.card {
+		height: 100%;
+		&__img-wrap {
+			img {
+				object-position: top;
+			}
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

@@ -3,140 +3,147 @@
 	--sPT: #{rem(0)};
 	--sPB: #{rem(14)};
 	--sTPB: #{rem(50)};
-  
-  @include media-breakpoint-up(xl) {
-    --sTPB: #{rem(110)};
-  }
-	
+
+	@include media-breakpoint-up(xl) {
+		--sTPB: #{rem(110)};
+	}
+
 	&__row {
-    position: relative;
+		position: relative;
 		// --bs-gutter-x: #{rem()};
 		--bs-gutter-y: #{rem(30)};
-    
+		z-index: 2;
 	}
-	.section-title{
+	.section-title {
 		max-width: rem(550);
 	}
 
-  h2 {
-    line-height: 1.15;
-  }
-	&__col{
+	h2 {
+		line-height: 1.15;
+	}
+	&__col {
 		&:last-child {
-      .pathCard {
-        @include media-breakpoint-up(xl) {
-          margin-top: rem(110);
-          margin-left: rem(20);
-        }
-        @include media-breakpoint-up(xxl) {
-          margin-top: rem(140);
-          margin-left: rem(26);
-        }
-      }
-    }
+			.pathCard {
+				@include media-breakpoint-up(xl) {
+					margin-top: rem(110);
+					margin-left: rem(20);
+				}
+				@include media-breakpoint-up(xxl) {
+					margin-top: rem(140);
+					margin-left: rem(26);
+				}
+			}
+		}
 	}
 	&__item {
-    position: relative;
+		position: relative;
 		background: $green;
-    padding: rem(40) rem(20);
-    border-radius: rem(15);
-    color: $white;
-    @include media-breakpoint-up(md) {
-      padding: rem(100) rem(70);
-    }
-    @include media-breakpoint-up(xl) {
-      padding-right: rem(20);
-      padding-bottom: rem(110);
-    }
+		padding: rem(40) rem(20);
+		border-radius: rem(15);
+		color: $white;
+		@include media-breakpoint-up(md) {
+			padding: rem(100) rem(70);
+		}
+		@include media-breakpoint-up(xl) {
+			padding-right: rem(20);
+			padding-bottom: rem(110);
+		}
 	}
 
-  .zig {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-40%);
-  }
+	.zig {
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		transform: translateX(-40%);
+	}
 
-  .girl {
-    position: absolute;
-    right: 0;
-    top: -60px;
-    max-width: 34%;
-    @include media-breakpoint-down(lg) {
-      display: none;
-    }
-  }
+	.girl {
+		position: absolute;
+		right: 0;
+		top: -60px;
+		max-width: 34%;
+		@include media-breakpoint-down(lg) {
+			display: none;
+		}
+	}
 
-  .line {
-    position: absolute;
-    top: -26px;
-    left: 6px;
-    max-width: 80%;
-    z-index: 0;
-    @include media-breakpoint-up(xxl) {
-      top: -46px;
-    }
-  }
+	.line {
+		position: absolute;
+		top: -26px;
+		left: 6px;
+		max-width: 80%;
+		z-index: -1;
+		@include media-breakpoint-up(xxl) {
+			top: -46px;
+		}
+	}
 
-  p {
-    line-height: 1.2;
-    margin-bottom: 0;
-    @include media-breakpoint-up(xl) {
-      max-width: rem(290);
-      font-size: rem(18);
-    }
-  }
+	p {
+		line-height: 1.2;
+		margin-bottom: 0;
+		@include media-breakpoint-up(xl) {
+			max-width: rem(290);
+			font-size: rem(18);
+		}
+	}
 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-between(md, xl) {}
-	@include media-breakpoint-only(xl) {}
-	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
 } // end.sPart
 
 .pathCard {
-  display: flex;
-  flex-direction: column;
-  gap: rem(16);
-  position: relative;
-  z-index: 1;
-  @include media-breakpoint-up(xl) {
-    margin-bottom: rem(16);
-  }
+	display: flex;
+	flex-direction: column;
+	gap: rem(16);
+	position: relative;
+	z-index: 1;
+	@include media-breakpoint-up(xl) {
+		margin-bottom: rem(16);
+	}
 
-  &--reverse {
-    @include media-breakpoint-up(xl) {
-      flex-direction: column-reverse;
-      max-width: rem(290);
-      @include media-breakpoint-up(xxl) {
-        margin-top: rem(-20);
-      }
-    }
-  }
+	&--reverse {
+		@include media-breakpoint-up(xl) {
+			flex-direction: column-reverse;
+			max-width: rem(290);
+			@include media-breakpoint-up(xxl) {
+				margin-top: rem(-20);
+			}
+		}
+	}
 
-  &:nth-child(2) {
-    margin-top: rem(30);
-    @include media-breakpoint-up(xl) {
-      margin-left: rem(86);
-      margin-top: rem(80);
-    }
-  }
+	&:nth-child(2) {
+		margin-top: rem(30);
+		@include media-breakpoint-up(xl) {
+			margin-left: rem(86);
+			margin-top: rem(80);
+		}
+	}
 
-  .bullet {
-    width: rem(18);
-  }
+	.bullet {
+		width: rem(18);
+	}
 
-  &__title {
-    font-weight: 700;
-    font-size: rem(18);
-    line-height: 120%;
-    text-transform: uppercase;
+	&__title {
+		font-weight: 700;
+		font-size: rem(18);
+		line-height: 120%;
+		text-transform: uppercase;
 
-    a {
-      color: $white;
-      text-decoration: underline;
-    }
-  }
+		a {
+			color: $white;
+			text-decoration: underline;
+		}
+	}
 }

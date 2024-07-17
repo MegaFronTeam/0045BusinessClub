@@ -19,7 +19,7 @@
 	}
 
 	h2 {
-		line-height: 1.15;
+		line-height: 1.08;
 	}
 	&__col {
 		&:last-child {
@@ -132,7 +132,16 @@
 	}
 
 	.bullet {
-		width: rem(18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+		width: rem(39);
+		height: rem(39);
+    font-weight: 700;
+    font-size: rem(25);
+    background: #DEDC00;
+    border: 1px solid #004F9F;
+    border-radius: 50%;
 	}
 
 	&__title {

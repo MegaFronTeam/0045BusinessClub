@@ -3,11 +3,10 @@
 	// --sPT: #{rem()};
 	--sPB: #{rem(93)};
 	--sTPB: #{rem(44)};
-	
-	&__row{
-		// --bs-gutter-x: #{rem()};
-		// --bs-gutter-y: #{rem()};
-	}
+
+  ul {
+    margin-left: rem(20);
+  }
 
   .dd-group {
     background: $white;
